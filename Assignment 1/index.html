@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <script src="main.js" ></script>
+    <style media="screen">
+      textarea {
+        height: 20px;
+        width: 200px;
+        resize: none;
+      }
+    </style>
+  </head>
+  <body onload="loadProvinces()">
+    <!-- heyo -->
+    <select id="cboProv"></select>
+    <p>Name:</p>
+    <textarea id = "txtName"></textarea>
+    <p>Email:</p>
+    <textarea id = "txtEmail"></textarea>
+    <br/>
+    <button onclick="validateForm()">Validate</button>
+    <p id = "output"></p>
+  </body>
+</html>
