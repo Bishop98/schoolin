@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Wisser Web Development</title>
+  <link rel="stylesheet" href="./css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(".dropdown-button").click(function() {
+        $(this).toggleClass("open");
+        $(".content, .footer").toggle();
+        $(".blackout").fadeToggle("slow");
+        $(".mobile-menu").slideToggle("slow");
+      });
+    });
+    </script>
+</head>
+
+<body>
+  <div class="blackout"></div>
+  <div class="header">
+    <div class="dropdown-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav">
+      <div class="mobile-menu">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about.html"><li>About</li></a>
+        <a href="./contact.html"><li>Contact</li></a>
+        <a href="./projects.html"><li>Projects</li></a>
+      </div>
+      <div class="desktop-menu">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./about.html"><li>About</li></a>
+        <a href="./contact.html"><li>Contact</li></a>
+        <a href="./projects.html" class="active"><li>Projects</li></a>
+      </div>
+    </div>
+    <img src="./graphics/logo.png" alt="Wisser Web Development Logo" class="logo" height="100px">
+    <div class="header-division"></div>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="card">
+        <h1>Project One</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+      <div class="card">
+        <h1>Project Two</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+      <div class="card">
+        <h1>Project Three</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <h1>Project Four</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+      <div class="card">
+        <h1>Project Five</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+      <div class="card">
+        <h1>Project Six</h1>
+        <img src="./graphics/placeholder-img.png" width="90%">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-division"></div>
+    <div class="row-1">
+      <p>joshJwisser98@gmail.com<br />(403) 975-4119</p>
+      <img src="./graphics/instagram.png" alt="Insta Logo" class="social-icons" height="40px">
+      <img src="./graphics/twitter.png" alt="Twitter Logo" class="social-icons" height="40px">
+    </div>
+
+    <p class="copyright">© Josh Wisser 2017</p>
+  </div>
+</body>
+
+</html>
