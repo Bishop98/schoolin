@@ -1,4 +1,10 @@
-
+// Well done, Josh.  Your application works as required and validates the
+// input will - even looking for the '@' for the email.  Everything appears
+// to be named correctly.  I won't take a mark off for this, but I'll suggest
+// that your validation messages be more intuitive - your email validation
+// says 'Enter a valid name' which could actually confuse the user.  Great works
+// otherwise
+// 10/10
 
 function loadProvinces() {
   var provs = document.getElementById("cboProv");
